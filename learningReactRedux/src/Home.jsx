@@ -27,7 +27,9 @@ const Home = () => {
                             <td className="px-4 py-2">{user.step}</td>
                             <td className="px-4 py-2">{user.description}</td>
                             <td className="px-4 py-2">
-                                <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded mr-2'>Edit</button>
+                                <Link to={`/edit/${user.id}`}>
+                                    <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded mr-2'>Edit</button>
+                                </Link>
                                 <button className='bg-red-500 hover:bg-red-900 text-white font-bold py-2 px-2 rounded'>Delete</button>
                             </td>
                         </tr>
