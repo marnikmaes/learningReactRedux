@@ -15,8 +15,8 @@ const Home = () => {
                 <thead>
                     <tr className='border-b text-left bg-gray-100'>
                         <th className="px-4 py-2 w-1/6">ID</th>
-                        <th className="px-4 py-2 w-2/6">Name</th>
-                        <th className="px-4 py-2 w-2/6">Email</th>
+                        <th className="px-4 py-2 w-2/6">Step</th>
+                        <th className="px-4 py-2 w-2/6">Description</th>
                         <th className="px-4 py-2 w-1/6">Action</th>
                     </tr>
                 </thead>
