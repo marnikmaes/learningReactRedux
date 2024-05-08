@@ -1,22 +1,22 @@
 export const userList = [
     {
-        step: 'Practische organisatie ',
-        description: 'Alle antwoorden op de 5W1H vragen, netjes samen te vatten in een document',
-        id: 1
+        id: 1,
+        step: 'Praktische organisatie',
+        description: 'Verzamel alle antwoorden op de 5W1H-vragen en vat ze samen in een overzichtelijk document.'
     },
     {
+        id: 2,
         step: 'Inhoudelijke voorbereiding',
-        description: 'Voorbereiding van alle agende punten die overlopen zullen worden tijdens de meeting',
-        id: 2
+        description: 'Bereid alle agendapunten voor die tijdens de vergadering zullen worden besproken.'
     },
     {
+        id: 3,
         step: 'Communicatie',
-        description: 'Alle communicatie kanalen op zetten, zoals Teams, WhatsApp groep, etc.',
-        id: 3
+        description: 'Zet alle communicatiekanalen op, zoals Teams, WhatsApp-groep, enzovoort.'
     },
     {
+        id: 4,
         step: 'Nazorg',
-        description: 'Resterende vragen oplossen en zien dat iedereen alles begrepen heeft.',
-        id: 4
+        description: 'Los overgebleven vragen op en zorg ervoor dat iedereen alles begrijpt.'
     },
-]
+];
