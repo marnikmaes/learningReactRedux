@@ -1,9 +1,17 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import {Link} from 'react-router-dom';
+import { deleteUser } from './UserReducer';
+
 
 const Home = () => {
     const users = useSelector((state) => state.user);
+    const dispatch = useDispatch();
+
+    const handleDelete = (id) => {
+        dispatch(deleteUser({id: id}))
+
+    }
     
     return (
         <div className="container mx-auto">
@@ -30,7 +38,7 @@ const Home = () => {
                                 <Link to={`/edit/${user.id}`}>
                                     <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded mr-2'>Edit</button>
                                 </Link>
-                                <button className='bg-red-500 hover:bg-red-900 text-white font-bold py-2 px-2 rounded'>Delete</button>
+                                <button onClick={() => handleDelete(user.id)} className='bg-red-500 hover:bg-red-900 text-white font-bold py-2 px-2 rounded'>Delete</button>
                             </td>
                         </tr>
                     ))}
