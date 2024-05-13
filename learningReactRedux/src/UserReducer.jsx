@@ -15,9 +15,17 @@ const userSlice = createSlice({
                 userToUpdate.step = step; // Corrected from `==` to `=`
                 userToUpdate.description = description; // Corrected from `==` to `=`
             }
+        },
+        deleteUser: (state, action) => {
+            const { id } = action.payload;
+            const userToDelete = state.find(user => user.id === parseInt(id));
+            if(userToDelete) {
+                return state.filter(f => f.id !== id);
+            }
+
         }
     }
 });
 
-export const { addUser, editUser } = userSlice.actions;
+export const { addUser, editUser, deleteUser} = userSlice.actions;
 export default userSlice.reducer;
